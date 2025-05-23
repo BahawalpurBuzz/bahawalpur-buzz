@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Basic SEO -->
+   
+  <meta name="description" content="Stay updated with the latest events in Bahawalpur - festivals, concerts, exhibitions, book fairs, and more. Join and explore Bahawalpur Buzz!">
+  <meta name="keywords" content="Bahawalpur events, Bahawalpur Buzz, book fair, concert Bahawalpur, food festival Bahawalpur, auto show, qawwali night">
+  <meta name="author" content="Bahawalpur Buzz Team">
+
+<!-- Open Graph Tags (for social sharing) -->
+  <meta property="og:title" content="Bahawalpur Buzz - Your City’s Event Hub">
+  <meta property="og:description" content="Discover and join exciting events happening in Bahawalpur! Music nights, food festivals, book fairs and more.">
+  <meta property="og:image" content="https://yourwebsite.com/images/social-preview.jpg"> <!-- Replace with your banner image URL -->
+  <meta property="og:url" content="https://yourwebsite.com/">
+  <meta property="og:type" content="website">
+
+<!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bahawalpur Buzz">
+  <meta name="twitter:description" content="Explore the best events in Bahawalpur.">
+  <meta name="twitter:image" content="https://yourwebsite.com/images/social-preview.jpg">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add Your Event | Bahawalpur Vibes</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo" data-aos="zoom-in">Bahawalpur Buzz</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="add-event.html">Add Event</a></li>
+        <li><a href="login-register.html">Login/Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- Add Event Section -->
+ <section class="add-event" data-aos="fade-up">
+    <h2>Add Your Event</h2>
+    <p>Create a free account to publish your event in Bahawalpur!</p>
+
+    <form action="https://getform.io/f/bllynvpb" class="event-form" method="POST" enctype="multipart/form-data">
+        <!-- Account Section -->
+        <h3>Create Organizer Account</h3>
+        <input type="text" name="name" placeholder="Your Full Name" required />
+        <input type="email" name="email" placeholder="Email Address" required />
+        <input type="password" name="password" placeholder="Create Password" required />
+      
+        <!-- Event Details -->
+        <h3>Event Details</h3>
+        <input type="text" name="event-title" placeholder="Event Title" required />
+        <input type="text" name="event-type" placeholder="Type (e.g. Concert, Bookfair)" required />
+        <input type="text" name="event-date" placeholder="Event Date (e.g. 15 May 2025)" required />
+        <input type="text" name="event-time" placeholder="Time (e.g. 7PM - 10PM)" required />
+        <input type="text" name="event-venue" placeholder="Venue" required />
+        <label>Upload Event Image</label>
+        <input type="file" name="event-photo" accept="image/*" required />
+        <input type="url" name="ticket-link" placeholder="Ticket Booking Link (optional)" />
+        <textarea name="event-description" rows="5" placeholder="Describe your event..." required></textarea>
+      
+        <!-- Optional Hidden Settings -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_redirect" value="https://yourwebsite.com/thank-you.html">
+      
+        <!-- Submit Button -->
+        <button type="submit" class="btn">Submit Event</button>
+    </form>
+      
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Bahawalpur Vibes. All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
